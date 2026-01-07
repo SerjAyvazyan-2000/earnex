@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Earnex — сервис для создания уникального визуала с помощью искусственного интеллекта. Генерация изображений, векторов и дизайна по текстовому описанию за секунды."
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Earnex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header-container">
+          <div class="header-body G-align-center">
+            <div class="header-main G-align-center">
+              <a class="header-logo G-flex" href="index.html">
+                <span>earnex</span>
+              </a>
+              <div class="burger">
+                <div class="burger-lines">
+                  <span></span>
+                </div>
+              </div>
+              <div class="languages-block G-align-center">
+                <div class="language-main G-align-center">
+                  <div class="header-language-flag G-flex">
+                    <img
+                      src="assets/images/RU.svg"
+                      width="28"
+                      loading="eager"
+                      height="20"
+                      alt="flag"
+                    />
+                  </div>
+                  <i class="icon icon-arrowDown"></i>
+                </div>
+                <div class="language-sub-block">
+                  <div class="language-sub-wrapper">
+                    <div class="language-sub-header G-align-center">
+                      <p>Выбор языка</p>
+                      <i class="icon icon-close"></i>
+                    </div>
+
+                    <div class="language-sub-columns G-flex">
+                      <div class="language-items G-flex-column">
+                        <div class="language-item active G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/RU.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Русский</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/EN.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>English</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag3.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Español</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag4.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Français</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag5.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Português</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag6.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Қазақ тілі</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag7.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>中文</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag8.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>বাংলা</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag9.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>한국어</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag10.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>日本語</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag11.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Bahasa Indonesia</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+                      </div>
+
+                      <div class="language-items G-flex-column">
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag12.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Polski</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag13.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Italiano</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag14.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>فارسی</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag15.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>ไทย</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag16.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Tiếng Việt</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag17.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Deutsch</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag18.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>العربية</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag19.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>हिन्दी</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag20.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Nederlands</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag21.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Türkçe</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-bg"></div>
+
+            <nav class="header-nav">
+              <ul class="header-menu-list G-align-center">
+                <li>
+                  <a class="active" href="#Offers">Офферы</a>
+                </li>
+                <li>
+                  <a href="#models">Модели выплат</a>
+                </li>
+                <li>
+                  <a href="#payments">Платежи</a>
+                </li>
+
+                <li>
+                  <a href="#howStart">Как начать?</a>
+                </li>
+              </ul>
+
+              <div class="languages-block-mobile">
+                <div class="language-main G-align-center">
+                  <div class="header-language-flag G-flex">
+                    <img
+                      src="assets/images/RU.svg"
+                      width="28"
+                      loading="eager"
+                      height="20"
+                      alt="flag"
+                    />
+                  </div>
+                  <p class="language-text">Русский</p>
+                  <i class="icon icon-arrowDown"></i>
+                </div>
+                <div class="language-sub-block">
+                  <div class="language-sub-wrapper">
+                    <div class="language-sub-header G-align-center">
+                      <p>Выбор языка</p>
+                      <i class="icon icon-close"></i>
+                    </div>
+
+                    <div class="language-sub-columns G-flex">
+                      <div class="language-items G-flex-column">
+                        <div class="language-item active G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/RU.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Русский</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/EN.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>English</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag3.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Español</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag4.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Français</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag5.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Português</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag6.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Қазақ тілі</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag7.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>中文</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag8.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>বাংলা</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag9.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>한국어</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag10.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>日本語</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag11.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Bahasa Indonesia</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+                      </div>
+
+                      <div class="language-items G-flex-column">
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag12.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Polski</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag13.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Italiano</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag14.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>فارسی</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag15.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>ไทย</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag16.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Tiếng Việt</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag17.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Deutsch</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag18.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>العربية</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag19.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>हिन्दी</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag20.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Nederlands</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+
+                        <div class="language-item G-align-center">
+                          <div class="language-item-info G-align-center">
+                            <div class="language-item-flag G-flex">
+                              <img
+                                src="assets/images/Flag21.svg"
+                                width="28"
+                                loading="lazy"
+                                height="20"
+                                alt="flag"
+                              />
+                            </div>
+                            <p>Türkçe</p>
+                          </div>
+                          <i class="icon icon-check"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+
+            <div class="header-actions G-align-center">
+              <a class="header-logo-mobile" href="index.html">
+                <span>ernx</span>
+              </a>
+
+              <a href="#" class="login-link G-center">
+                <i class="icon icon-login"></i>
+              </a>
+              <a href="#" class="register-link G-center">
+                <span class="desktop-block">Cтать партнёром</span>
+                <i class="icon icon-plus mobile-block"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero-section">
+          <div class="hero-container">
+            <div class="hero-body">
+              <div class="hero-titles G-column-center">
+                <h1 class="fade-top ">
+                  Партнёрская <span class="mobile-text-wrap">программа</span>
+                  <span class="text-wrap">для вебмастеров</span>
+                </h1>
+                <p class="fade-bottom ">
+                  Прозрачные модели выплат
+                  <span class="mobile-text-wrap"
+                    >без ограничений по трафику.</span
+                  >
+                  <span class="desktop-text-wrap"
+                    >Контроль цифр в одном кабинете</span
+                  >
+                </p>
+              </div>
+              <div class="hero-links fade-bottom G-align-center">
+                <a href="#" class="dark-blue-link">Посмотреть офферы</a>
+                <a href="#" class="shadow-link G-align-center">
+                  <i class="icon icon-arrowUp"></i>
+                  <span>Зарегистрироваться</span>
+                </a>
+              </div>
+
+              <div class="hero-iphone fade-bottom G-flex">
+                <picture>
+                  <source
+                    srcset="assets/images/heroIphoneMobile.webp"
+                    media="(max-width: 576px)"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/images/heroIphone.webp"
+                    width="1307"
+                    height="500"
+                    loading="eager"
+                    alt="photo"
+                  />
+                </picture>
+              </div>
+
+              <div class="private-launch fade-left">
+                <div class="private-launch-header G-align-center">
+                  <span></span>
+                  <p>Private launch</p>
+                </div>
+                <div class="private-launch-cnt G-align-center">
+                  <div class="private-launch-texts">
+                    <p>Основа работы - подписка</p>
+                    <span
+                      >Высокий уровень удержания, понятный LTV и прогнозируемые
+                      выплаты</span
+                    >
+                  </div>
+                  <div class="private-launch-tags">
+                    <span>UP</span>
+                    <span>TO HIGH</span>
+                    <span>LTV</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="traffics-block fade-right">
+                <p>Типы трафика</p>
+
+                <ul class="traffics-tags G-align-center">
+                  <li>SEO</li>
+                  <li>Контекст</li>
+                  <li>Соц.сети</li>
+                  <li>Push / in-app</li>
+                  <li>Арбитраж</li>
+                  <li>Private сетки</li>
+                </ul>
+              </div>
+
+              <div class="hero-tag hero-tag--one fade-left">CPA, RevShare и гибрид</div>
+              <div class="hero-tag hero-tag--two fade-right">Любой объём</div>
+              <div class="hero-tag hero-tag--tree fade-left">Старт без лимитов</div>
+              <div class="hero-tag hero-tag--for fade-right">Любой трафик</div>
+            </div>
+          </div>
+
+          <div class="hero-blur-one"></div>
+          <div class="hero-blur-two"></div>
+        </section>
+
+        <section id="Offers" class="Offers-section section">
+          <div class="container">
+            <div class="Offers-body">
+              <div class="section-titles G-column-center">
+                <div class="section-tag fade-top G-align-center">
+                  <span></span>
+                  <p>Офферы</p>
+                </div>
+                <h2 class="section-title fade-bottom">
+                  Три продукта —
+                  <span class="text-wrap">единое ядро</span>
+                </h2>
+                <p class="section-sub-title fade-bottom">
+                  Вся платформа Earnex построена вокруг трёх продуктов,
+                  <span class="desktop-text-wrap"
+                    >которые мы полностью контролируем: от воронки до
+                    выплат</span
+                  >
+                </p>
+              </div>
+
+              <div class="Offers-cnt-wrapper block-cnt">
+                <div class="Offers-media-wrapper fade-left">
+                  <div data-id="1" class="Offers-media-item G-center">
+                    <img
+                      src="assets/images/slidyLogo.svg"
+                      width="278"
+                      loading="lazy"
+                      height="84"
+                      alt="photo"
+                    />
+                  </div>
+
+                  <div data-id="2" class="Offers-media-item G-center">
+                    <img
+                      src="assets/images/nexaLogo.svg"
+                      width="150"
+                      loading="lazy"
+                      height="150"
+                      alt="photo"
+                    />
+                  </div>
+
+                  <div data-id="3" class="Offers-media-item G-center">
+                    <img
+                      src="assets/images/wace.svg"
+                      width="284"
+                      loading="lazy"
+                      height="60"
+                      alt="photo"
+                    />
+                  </div>
+
+                  <a href="#" class="Offers-media-link G-align-center">
+                    <i class="icon icon-arrowUp"></i>
+                    <span>Принять оффер</span>
+                  </a>
+                </div>
+
+                <div id="accordion" class="Offers-info-items fade-right G-flex-column">
+                  <div data-id="1" class="Offer-info-item animate-item">
+                    <div class="Offer-info-mobile-block">
+                      <img
+                        src="assets/images/slidyLogo.svg"
+                        width="160"
+                        loading="lazy"
+                        height="48"
+                        alt="photo"
+                      />
+                    </div>
+                    <div class="Offer-info-header link G-align-center">
+                      <p>
+                        <strong>Slidy:</strong> стабильный сервис с подпиской
+                      </p>
+                      <div class="Offer-info-icon G-center">
+                        <i class="icon icon-arrowUp"></i>
+                      </div>
+                    </div>
+                    <div class="Offer-info-sub-block submenu">
+                      <p>
+                        Предсказуемый ретешн и быстрый апрув. Подходит под
+                        стабильный mid-бакет и вертикали «долгоиграющего»
+                        трафика.
+                      </p>
+                      <ul>
+                        <li>
+                          <span>•</span>
+                          <span>
+                            Хорошо конвертирует даже на холодном трафике</span
+                          >
+                        </li>
+                        <li>
+                          <span>•</span>
+                          <span>Плавные выплаты без резких скачков</span>
+                        </li>
+                        <li>
+                          <span>•</span>
+                          <span>Подходит для SEO и контекстной рекламы</span>
+                        </li>
+                      </ul>
+
+                      <a
+                        href="#"
+                        class="Offers-media-link mobile-block G-align-center"
+                      >
+                        <i class="icon icon-arrowUp"></i>
+                        <span>Принять оффер</span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div data-id="2" class="Offer-info-item animate-item">
+                    <div class="Offer-info-mobile-block">
+                      <img
+                        src="assets/images/nexaLogo.svg"
+                        width="48"
+                        loading="lazy"
+                        height="48"
+                        alt="photo"
+                      />
+                    </div>
+
+                    <div class="Offer-info-header link G-align-center">
+                      <p><strong>Nexa:</strong> оффер для арбитража</p>
+                      <div class="Offer-info-icon G-center">
+                        <i class="icon icon-arrowUp"></i>
+                      </div>
+                    </div>
+                    <div class="Offer-info-sub-block submenu">
+                      <p>
+                        Гибкие капы, готовность к спайкам по объёмам и быстрые
+                        реакции по креативам. Для тех, кто льёт много и быстро
+                      </p>
+                      <ul>
+                        <li>
+                          <span>•</span>
+                          <span>Поддержка разных источников трафика</span>
+                        </li>
+                        <li>
+                          <span>•</span>
+                          <span>Быстрая обратная связь по результатам</span>
+                        </li>
+                        <li>
+                          <span>•</span>
+                          <span>Настройка индивидуальных KPI под команду</span>
+                        </li>
+                      </ul>
+
+                      <a
+                        href="#"
+                        class="Offers-media-link mobile-block G-align-center"
+                      >
+                        <i class="icon icon-arrowUp"></i>
+                        <span>Принять оффер</span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div data-id="3" class="Offer-info-item animate-item">
+                    <div class="Offer-info-mobile-block">
+                      <img
+                        src="assets/images/wace.svg"
+                        width="160"
+                        loading="lazy"
+                        height="34"
+                        alt="photo"
+                      />
+                    </div>
+                    <div class="Offer-info-header link G-align-center">
+                      <p>
+                        <strong>Wace:</strong> гибкий продукт с упором на LTV
+                      </p>
+                      <div class="Offer-info-icon G-center">
+                        <i class="icon icon-arrowUp"></i>
+                      </div>
+                    </div>
+                    <div class="Offer-info-sub-block submenu">
+                      <p>
+                        Оптимален для RevShare и гибридных моделей. Хороший
+                        ретеншн с возможностью выстроить долгосрочный доход.
+                      </p>
+                      <ul>
+                        <li>
+                          <span>•</span>
+                          <span
+                            >Высокий средний чек по активным пользователям</span
+                          >
+                        </li>
+                        <li>
+                          <span>•</span>
+                          <span
+                            >Возможность дополнительной монетизации базы</span
+                          >
+                        </li>
+                        <li>
+                          <span>•</span>
+                          <span>Прозрачные отчёты по LTV и ретеншену</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="models" class="payment-models-section section">
+          <div class="container">
+            <div class="models-body">
+              <div class="section-titles G-column-center">
+                <div class="section-tag fade-top G-align-center">
+                  <span></span>
+                  <p>Модели выплат</p>
+                </div>
+                <h3 class="section-title fade-bottom">
+                  Три модели выплат —
+                  <span class="text-wrap">разные стратегии</span>
+                </h3>
+                <p class="section-sub-title fade-bottom">
+                  Модель можно менять в зависимости от оффера
+                  <span class="desktop-text-wrap">и источникам трафика</span>
+                </p>
+              </div>
+
+              <div class="payment-models-items fade-bottom block-cnt">
+                <div class="payment-models-swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div
+                        class="payment-model-item payment-model-green-item G-flex-column"
+                      >
+                        <div class="payment-item-titles">
+                          <h3>CPA (Cost Per Action)</h3>
+                          <p>Фикс за действие (до 450 руб)</p>
+                        </div>
+
+                        <ul class="payment-item-texts">
+                          <li>
+                            Подходит для команд, которым важен быстрый оборот.
+                          </li>
+                          <li>
+                            Фиксированная оплата за регистрацию, триал или
+                            первый платёж.
+                          </li>
+                        </ul>
+
+                        <p class="payment-item-clue">
+                          Быстрый кэш, простая юнит-экономика, минимум
+                          неожиданностей
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div
+                        class="payment-model-item payment-model-aqua-item G-flex-column"
+                      >
+                        <div class="payment-item-titles">
+                          <h3>RevShare</h3>
+                          <p>Доля от платежей (до 50%)</p>
+                        </div>
+
+                        <ul class="payment-item-texts">
+                          <li>
+                            Долгосрочный пассивный доход с каждого привлечённого
+                            пользователя.
+                          </li>
+                          <li>
+                            Чем лучше прогреваев тем дольше и прогнозируемее
+                            выплаты.
+                          </li>
+                        </ul>
+
+                        <p class="payment-item-clue">
+                          Сильный апсайд на дистанции, детальная аналитика и
+                          прогнозируемый cash flow
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div
+                        class="payment-model-item payment-model-blue-item G-flex-column"
+                      >
+                        <div class="payment-item-titles">
+                          <h3>Hybrid</h3>
+                          <p>Баланс между CPA и RevShare</p>
+                        </div>
+
+                        <ul class="payment-item-texts">
+                          <li>
+                            Комбинация для баланса между стабильностью и
+                            потенциалом.
+                          </li>
+                          <li>
+                            Можно комбинировать модели под разные офферы и даже
+                            источники трафика.
+                          </li>
+                        </ul>
+
+                        <p class="payment-item-clue">
+                          Фикс за лид + доля с будущих платежей. Идеально для
+                          тестов и новых GEO.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payment-model-pagination swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="payments" class="payments-section section">
+          <div class="container">
+            <div class="payments-body">
+              <div class="section-titles G-column-center">
+                <div class="section-tag fade-top G-align-center">
+                  <span></span>
+                  <p>Платежи</p>
+                </div>
+                <h4 class="section-title fade-bottom">
+                  Работа с платежами
+                  <span class="text-wrap">по всему миру</span>
+                </h4>
+                <p class="section-sub-title fade-bottom">
+                  <span class="mobile-text-wrap">
+                    Со всеми странами и основными</span
+                  >
+                  платёжными
+                  <span class="desktop-text-wrap"
+                    >системами.
+                    <span class="mobile-text-wrap"
+                      >Без ограничений по ГЕО</span
+                    ></span
+                  >
+                </p>
+              </div>
+
+              <div class="payments-cnt  block-cnt">
+                <div class="word-map fade-bottom G-flex">
+                  <picture>
+                    <source
+                      srcset="assets/images/wordMapMobile.webp"
+                      media="(max-width: 576px)"
+                      type="image/webp"
+                    />
+                    <img
+                      src="assets/images/wordMap.webp"
+                      width="1160"
+                      loading="lazy"
+                      height="501"
+                      alt="photo"
+                    />
+                  </picture>
+                </div>
+
+                <div class="payments-items fade-bottom G-align-center">
+                  <div class="payment-item G-flex">
+                    <img
+                      src="assets/images/paymentItem.svg"
+                      width="115"
+                      loading="lazy"
+                      height="65"
+                      alt="photo"
+                    />
+                  </div>
+                  <div class="payment-item G-flex">
+                    <img
+                      src="assets/images/paymentItem2.svg"
+                      width="140"
+                      loading="lazy"
+                      height="65"
+                      alt="photo"
+                    />
+                  </div>
+
+                  <div class="payment-item G-flex">
+                    <img
+                      src="assets/images/paymentItem3.svg"
+                      width="190"
+                      loading="lazy"
+                      height="65"
+                      alt="photo"
+                    />
+                  </div>
+                  <div class="payment-item G-flex">
+                    <img
+                      src="assets/images/paymentItem4.webp"
+                      width="140"
+                      loading="lazy"
+                      height="65"
+                      alt="photo"
+                    />
+                  </div>
+
+                  <div class="payment-item G-flex">
+                    <img
+                      src="assets/images/paymentItem5.webp"
+                      width="140"
+                      loading="lazy"
+                      height="65"
+                      alt="photo"
+                    />
+                  </div>
+                  <div class="payment-item G-flex">
+                    <img
+                      src="assets/images/paymentItem6.svg"
+                      width="140"
+                      loading="lazy"
+                      height="65"
+                      alt="photo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="disbursement" class="disbursement-section section">
+          <div class="container">
+            <div class="disbursement-body">
+              <div class="section-titles G-column-center">
+                <div class="section-tag fade-top G-align-center">
+                  <span></span>
+                  <p>Выплаты</p>
+                </div>
+                <h5 class="section-title fade-bottom">
+                  Точные выплаты
+                  <span class="text-wrap">по расписанию</span>
+                </h5>
+                <p class="section-sub-title fade-bottom">
+                  Начисления считаются автоматически, условия не меняются
+                  <span class="desktop-text-wrap"
+                    >задним числом, вся история доступна в кабинете</span
+                  >
+                </p>
+              </div>
+
+              <div class="disbursement-columns block-cnt G-align-center">
+                <div class="disbursement-small-column G-flex-column">
+                  <div class="disbursement-item--one animate-item">
+                    <div class="disbursement-item-img--one G-flex">
+                      <img
+                        src="assets/images/disbursementImg1.webp"
+                        width="156"
+                        loading="lazy"
+                        height="37"
+                        alt="photo"
+                      />
+                    </div>
+                    <p>
+                      <span class="desktop-block"
+                        >Получайте деньги каждую пятницу</span
+                      >
+
+                      <span class="mobile-block">Еженедельные начисления</span>
+                    </p>
+                  </div>
+
+                  <div class="disbursement-item--two G-flex animate-item">
+                    <picture>
+                      <source
+                        srcset="assets/images/disbursementImg2Mobile.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/disbursementImg2.webp"
+                        width="186"
+                        loading="lazy"
+                        height="133"
+                        alt="photo"
+                      />
+                    </picture>
+                  </div>
+                </div>
+                <div class="disbursement-big-column G-flex-column">
+                  <div class="disbursement-item--tree animate-item">
+                    <p>Способы вывода:</p>
+                    <ul>
+                      <li>Банковские карты</li>
+                      <li>Юридические счета</li>
+                      <li>USDT (TRC-20/ERC-20)</li>
+                      <li>ЮMoney</li>
+                      <li>WebMoney (WMZ)</li>
+                    </ul>
+                  </div>
+                  <div class="disbursement-item--for G-align-start animate-item">
+                    <div class="disbursement-item-link G-center">
+                      <i class="icon icon-arrowUp"></i>
+                    </div>
+
+                    <div class="disbursement-item--for-img G-flex">
+                      <picture>
+                        <source
+                          srcset="assets/images/disbursementImg3Mobile.webp"
+                          media="(max-width: 576px)"
+                          type="image/webp"
+                        />
+                        <img
+                          src="assets/images/disbursementImg3.webp"
+                          width="191"
+                          loading="lazy"
+                          height="131"
+                          alt="photo"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+
+                  <div class="disbursement-item--five mobile-block animate-item">
+                    <p>Планируйте кэшфлоу без сюрпризов</p>
+
+                    <div class="disbursement-item--five-decor G-flex">
+                      <img
+                        src="assets/images/disbursementImg4.webp"
+                        width="84"
+                        loading="lazy"
+                        height="84"
+                        alt="photo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="disbursement-small-column G-flex-column">
+                  <div class="disbursement-item--five desktop-block animate-item">
+                    <p>Планируйте кэшфлоу без сюрпризов</p>
+
+                    <div class="disbursement-item--five-decor G-flex">
+                      <img
+                        src="assets/images/disbursementImg4.webp"
+                        width="84"
+                        loading="lazy"
+                        height="84"
+                        alt="photo"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="disbursement-item--six animate-item">
+                    <ul>
+                      <li>Нет требований по обороту или сумме.</li>
+                      <li>Выводите деньги когда угодно</li>
+                    </ul>
+
+                    <div class="disbursement-item--six-decor G-flex">
+                      <picture>
+                        <source
+                          srcset="assets/images/disbursementImg5Mobile.webp"
+                          media="(max-width: 576px)"
+                          type="image/webp"
+                        />
+                        <img
+                          src="assets/images/disbursementImg5.webp"
+                          width="84"
+                          loading="lazy"
+                          height="84"
+                          alt="photo"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="howStart" class="how-start-section section">
+          <div class="container">
+            <div class="how-start-body">
+              <div class="section-titles G-column-center">
+                <div class="section-tag fade-top G-align-center">
+                  <span></span>
+                  <p>Как начать?</p>
+                </div>
+                <h6 class="section-title fade-bottom">
+                  Прозрачный процесс
+                  <span class="desktop-text-wrap"><span class="mobile-text-wrap">от заявки до</span> масштабирования</span>
+                </h6>
+                <p class="section-sub-title fade-bottom">
+                  <span class="mobile-text-wrap">Прозрачные модели выплат, любой</span> трафик, контроль
+                  <span class="desktop-text-wrap">цифр в одном кабинете.</span>
+                </p>
+              </div>
+              <div class="how-start-cnt block-cnt">
+                <div class="how-start-top-items fade-bottom G-align-center">
+                  <p><a href="#">Регистрация</a> и онбординг</p>
+                  <span></span>
+                  <p>Подбор офферов и моделей</p>
+                  <span></span>
+                  <p>Запуск и масштабирование</p>
+                  <span></span>
+                </div>
+                <div class="how-start-bottom-items G-flex">
+                   <div class="how-start-item-line animate-item"></div>
+                  <div class="how-start-bottom-item animate-item">
+                    <div class="how-start-item-tag">
+                      <a href="#">Регистрация</a> и онбординг
+                    </div>
+                    <div class="how-start-item-texts G-align-center">
+                      <p>1</p>
+                      <span
+                        >Рассказываете, с какими источниками работаете, какие
+                        объёмы планируете и какие модели выплат вам
+                        подходят.</span
+                      >
+                    </div>
+                  </div>
+                   <div class="how-start-item-line animate-item"></div>
+
+                  <div class="how-start-bottom-item animate-item">
+                    <div class="how-start-item-tag">
+                      Подбор офферов и моделей
+                    </div>
+                    <div class="how-start-item-texts G-align-center">
+                      <p>2</p>
+                      <span
+                        >Согласовываем капы, модель выплат, целевые метрики и
+                        формат отчётности.</span
+                      >
+                    </div>
+                  </div>
+                   <div class="how-start-item-line animate-item"></div>
+
+                  <div class="how-start-bottom-item animate-item">
+                    <div class="how-start-item-tag">
+                      Запуск и масштабирование
+                    </div>
+
+                    <div class="how-start-item-texts G-align-center">
+                      <p>3</p>
+                      <span
+                        >Запуская трафик, вместе следим за показателями и
+                        принимаем решение, где масштабироваться дальше</span
+                      >
+                    </div>
+                  </div>
+                    <div class="how-start-item-line animate-item"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="trust-section section">
+          <div class="container">
+            <div class="trust-body">
+              <div class="trust-titles fade-top G-column-center">
+                <h6>Зарабатывайте <span class="mobile-text-wrap">больше</span> на том же трафике</h6>
+                <p>
+                  Earnex — партнёская для тех, кто считает <span class="mobile-text-wrap">экономику и не
+                  работает вслепую.</span> Подписки, контроль LTV и стабильные <span class="mobile-text-wrap">выплаты</span>
+                </p>
+              </div>
+              <div class="trust-links fade-bottom G-align-center">
+                <a href="#" class="dark-blue-link">Войти в кабинет</a>
+                <a href="#" class="shadow-link G-align-center">
+                  <i class="icon icon-arrowUp"></i>
+                  <span>Cтать партнёром Earnex</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="trust-media ">
+            <picture>
+              <source
+                srcset="assets/images/trustMediaMobile.webp"
+                media="(max-width: 576px)"
+                type="image/webp"
+              />
+              <img
+                src="assets/images/trustMedia.webp"
+                alt="photo"
+                loading="lazy"
+                width="1440"
+                height="762"
+              />
+            </picture>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="container">
+          <div class="footer-body fade-bottom">
+            <div class="footer-top-column G-align-center">
+              <a href="#" class="footer-logo">earnex</a>
+              <div class="footer-tags G-align-center">
+                <p>CPA, RevShare и гибрид</p>
+                <p>Старт без лимитов</p>
+                <p>Любой трафик</p>
+              </div>
+              <div class="footer-links G-align-center">
+                <a href="#" class="G-flex">
+                  <img
+                    src="assets/images/telegram.svg"
+                    width="60"
+                    loading="lazy"
+                    height="60"
+                    alt="photo"
+                  />
+                </a>
+                <a href="#" class="G-flex">
+                  <img
+                    src="assets/images/vk.svg"
+                    width="60"
+                    loading="lazy"
+                    height="60"
+                    alt="photo"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="footer-texts G-column-center">
+              <p><a class="mobile-text-wrap">Партнёрская программа для</a> вебмастеров и команд арбитража</p>
+              <span>© 2026 Earnex. Все права защищены</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
+
