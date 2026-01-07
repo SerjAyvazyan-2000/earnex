@@ -10,8 +10,8 @@ const modelsSwiper = new Swiper(".payment-models-swiper", {
 
 
   breakpoints: {
-    320: { slidesPerView: 1, spaceBetween: 10 },
-    576: { slidesPerView: 1.5 , spaceBetween: 10},
+    320: { slidesPerView: 1, },
+    576: { slidesPerView: 1.5 ,},
     626: { slidesPerView: 1.6 },
      700: { slidesPerView: 2 },
     830: { slidesPerView: 2.2 },

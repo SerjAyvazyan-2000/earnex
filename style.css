@@ -925,12 +925,20 @@ header.muved {
 .Offer-info-mobile-block {
   display: none;
 }
-
+.payment-models-swiper{
+  overflow: unset !important;
+}
 .payment-model-item {
   padding: 30px;
   border-radius: 20px;
   gap: 26px;
   min-height: 309px;
+  transition: .4s;
+  cursor: pointer;
+}
+.payment-model-item:hover{
+  box-shadow: 0px 0px 20px 0px rgba(14, 165, 233, 0.2);
+
 }
 .payment-model-green-item {
   border: 1px solid #6ee7b780;
@@ -945,7 +953,7 @@ header.muved {
   position: initial;
   margin-top: 10px;
   justify-content: center;
-  gap: 8px;
+  gap: 14px;
   display: flex;
 }
 .payment-model-pagination .swiper-pagination-bullet {
@@ -962,7 +970,6 @@ header.muved {
 }
 .payment-model-aqua-item {
   border: 1px solid #7dd3fc80;
-  box-shadow: 0px 0px 20px 0px rgba(14, 165, 233, 0.2);
 }
 .payment-model-aqua-item h3 {
   color: #7dd3fc;
@@ -1314,7 +1321,7 @@ header.muved {
   position: absolute;
   left: 0;
   bottom: 0;
-
+ width: 100%;
   z-index: -1;
 }
 .trust-media picture {
@@ -1689,7 +1696,7 @@ footer {
   }
 
   .header-nav {
-    max-height: 60vh;
+    max-height: 90vh;
     overflow: auto;
   }
   .header-menu-list li a {
@@ -1733,7 +1740,7 @@ footer {
     padding: 20px 5px 20px 20px;
   }
   .language-sub-wrapper {
-    max-height: 40vh;
+    max-height: 20vh;
   }
   .language-sub-block {
     width: 100%;
